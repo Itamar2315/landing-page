@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: roboto;
-    src: url("Roboto-Regular.ttf");
+    src: url("Roboto-Medium.ttf");
 }
 
 body{
@@ -103,3 +103,19 @@ p{
 }
 
 
+.middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 24px; */
+}
+
+.middle h2{
+    
+    font-size: 36px;
+    font-weight: extra-bold;
+    margin: 48px;
+    color: #1F2937;
+    
+}
