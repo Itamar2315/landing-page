@@ -4,9 +4,41 @@
 }
 
 @font-face {
-    font-family: roboto;
-    src: url("fonts/Roboto-Regular.ttf");
-}
+    font-family: Roboto;
+    font-weight: 100;
+    src: url("../assets/fonts/heebo/Heebo-ExtraLight.ttf");
+  }
+  @font-face {
+    font-family: Roboto;
+    font-weight: 200;
+    src: url("fonts/Roboto/Roboto-Light.ttf");
+  }
+  @font-face {
+    font-family: Roboto;
+    font-weight: 300;
+    src: url("fonts/Roboto/Roboto-Thin.ttf");
+  }
+  @font-face {
+    font-family: Roboto;
+    font-weight: 400;
+    src: url("fonts/Roboto/Roboto-Regular.ttf");
+  }
+  @font-face {
+    font-family: Roboto;
+    font-weight: 500;
+    src: url("fonts/Roboto/Roboto-Medium.ttf");
+  }
+  @font-face {
+    font-family: Roboto;
+    font-weight: 600;
+    src: url("fonts/Roboto/Roboto-SemiBold.ttf");
+  }
+  @font-face {
+    font-family: Roboto;
+    font-weight: 700;
+    src: url("fonts/Roboto/Roboto-Bold.ttf");
+  }
+
 
 body{
     font-family: roboto;
@@ -18,7 +50,6 @@ body{
 h1{
     font-size: 48px;
     font-weight: 900;
-    margin: 4px;
 }
 
 h3{
@@ -36,20 +67,19 @@ li a{
     text-decoration: none;
     color: #E5E7EB;
 }
-img{
-    width: 400px;
-    height: 200px;
-    align-self: center;
+
+.headcon img{
+    width: 500px;
+    height: 300px;
+    align-self: center;   
 }
 
 .header{
     display: flex;
-    
     color: #F9FAF8;
     background-color: #1F2937;
     flex-direction: column;
-    padding: 12px 250px 120px 180px;
-    
+    padding: 12px 250px 120px 180px;  
 }
 
 .header p{
@@ -70,13 +100,13 @@ img{
     display: flex;
     gap: 16px;
     padding-top: 80px;
-    /* justify-content: center; */
 }
 
 .info{
     display: flex;
     flex-direction: column;
     align-self: center;
+    gap: 16px;
 }
 
 .sign{
@@ -88,7 +118,6 @@ img{
     font-size: 16px;
     padding: 10px 36px;
     font-weight: 600;
-    margin: 4px;
     
     align-self: flex-start;
 }
@@ -104,23 +133,31 @@ img{
 
 /* MIDDLE SECTION BELOW*/
 .middle{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+
     padding: 60px;
     color: #1F2937;
-    gap: 60px;
+    /* gap: 60px; */
 }
 
 .middle h2{
-    
+    display: block;
+    text-align: center;
+    width: 800px;
+    max-width: 100%;
     font-size: 36px;
     font-weight: bolder;
+    margin: 0px auto;
+    margin-bottom: 60px;
+    
 }
 
 .middle ul{
     display: flex;
+    justify-content: center;
     gap: 24px;
     flex-wrap: wrap;
     
@@ -144,8 +181,8 @@ img{
     height: auto;
     
 }
-
 /* MIDDLE SECTION ABOVE*/
+
 
 /* QUOTE SECTION BELOW*/
 .quote-section{
@@ -157,29 +194,23 @@ img{
 
 .quote{
     font-size: 36px;
-    font-weight: lighter;
+    font-weight: 200;
     font-style: italic;
     color: #1F2937;
 }
 
 .quoter-of{
     align-self: flex-end;
-    font-size: 36px;  
-    /* why cna't I change font size??? keeps reverting to p default size*/
+    font-size: 24px;  
     color: #1F2937;
     margin: 16px;
     font-weight: bold;
-    font-size: medium;
 }
 /* QUOTE SECTION ABOVE*/
 
 
 /* SIGN UP SECTION BELOW*/
 .action-section{
-    /* what's the best practice? should I use flex? */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
     padding: 96px 192px;
     
 }
@@ -211,13 +242,18 @@ img{
     margin: 6px;
     font-size: 16px;
     font-weight: bolder;
+    transition: 750ms;
+}
+
+.sign-button:hover{
+    background-color: #81aff8;
+    cursor: pointer;
 }
 
 .footer{
-    display: flex;
+    
     background-color: #1F2937;
     color: #F9FAF8;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     padding: 48px;
 }
