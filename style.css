@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: roboto;
-    src: url("fonts/Roboto-Medium.ttf");
+    src: url("fonts/Roboto-Regular.ttf");
 }
 
 body{
@@ -13,7 +13,7 @@ body{
 }
 
 
-/* HEADER */
+/* HEADER BELOW*/
 
 h1{
     font-size: 48px;
@@ -96,27 +96,26 @@ img{
     font-size: 18px;
     color: #E5E7EB;
 }
-/* HEADER */
-
-p{
-    margin: 4px;
-}
+/* HEADER ABOVE*/
 
 
+
+/* MIDDLE SECTION BELOW*/
 .middle{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding: 24px; */
+    padding: 60px;
     color: #1F2937;
+    gap: 60px;
 }
 
 .middle h2{
     
     font-size: 36px;
-    font-weight: extra-bold;
-    margin: 48px;
+    font-weight: bolder;
+    align-self: center;
 }
 
 .middle ul{
@@ -140,4 +139,79 @@ p{
     width: 250px;
 }
 
+/* MIDDLE SECTION ABOVE*/
 
+/* QUOTE SECTION BELOW*/
+.quote-section{
+    display: flex;
+    flex-direction: column;
+    padding: 140px 200px;
+    background-color: #E5E7EB;
+}
+
+.quote{
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quoter-of{
+    align-self: flex-end;
+    font-size: 36px;  
+    /* why cna't I change font size??? keeps reverting to p default size*/
+    color: #1F2937;
+    margin: 16px;
+    font-weight: bold;
+    font-size: medium;
+}
+/* QUOTE SECTION ABOVE*/
+
+
+/* SIGN UP SECTION BELOW*/
+.action-section{
+    /* what's the best practice? should I use flex? */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 96px 192px;
+    
+}
+
+.action-banner{
+    display: flex;
+    background-color: #3882F8;
+    color:#F9FAF8;
+    border-radius: 12px;
+    border: 2px solid;
+    padding: 40px 96px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.action-banner p{
+    margin: 2px;
+    font-size: 16px;
+}
+
+.sign-button{
+    background-color: #3882F8;
+    border-color: #F9FAF8;
+    color: #F9FAF8;
+    border-radius: 8px;
+    border: 2px solid;
+    padding: 2px 36px;
+    margin: 6px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.footer{
+    display: flex;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+}
