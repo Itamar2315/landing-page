@@ -109,6 +109,7 @@ p{
     align-items: center;
     justify-content: center;
     /* padding: 24px; */
+    color: #1F2937;
 }
 
 .middle h2{
@@ -116,6 +117,27 @@ p{
     font-size: 36px;
     font-weight: extra-bold;
     margin: 48px;
-    color: #1F2937;
+}
+
+.middle ul{
+    display: flex;
+    align-self: center;
+    gap: 24px;
+    flex-wrap: wrap;
     
 }
+
+.middle li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 250px;
+    text-align: center;
+}
+
+.middle img{
+    width: 250px;
+}
+
+
